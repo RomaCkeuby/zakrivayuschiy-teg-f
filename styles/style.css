@@ -214,6 +214,7 @@ main {
 .save-button svg {
   /* inline-size: 21px; */
   inline-size: clamp(1.75rem, 1.904rem + -0.657vw, 1.313rem);
+  mix-blend-mode: difference;
 }
 
 .save-window {
@@ -280,10 +281,6 @@ main {
 
 button span {
   z-index: 1;
-  mix-blend-mode: difference;
-}
-
-.save-button svg {
   mix-blend-mode: difference;
 }
 
