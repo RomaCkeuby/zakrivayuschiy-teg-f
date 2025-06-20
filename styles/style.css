@@ -77,7 +77,7 @@ main {
 .card__title {
   padding-inline-start: 10px;
   padding-block: 3px;
-  font-weight: var(--title-weight);
+  font-variation-settings: "wght" var(--title-weight);
   font-size: 18px;
   line-height: 25px;
 }
