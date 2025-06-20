@@ -9,3 +9,101 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+
+/* анимация сердца */
+
+.sparks {
+  opacity: 0;
+}
+
+.main-body,
+.core {
+  transition: fill 0.3s;
+  fill: var(--light-color);
+}
+
+.core {
+  transition-delay: 0.03s;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--contour-color);
+  transition-delay: 0s;
+}
+
+.main-body {
+  transition-delay: 0s;
+}
+
+.card__icon-button:hover .main-body {
+  fill: var(--contour-color);
+  transition-delay: 0.05s;
+}
+
+/* active */
+
+.card__icon-button:active .core {
+  fill: var(--animation-fill-color);
+  transition-delay: 0s;
+}
+
+.card__icon-button:active .main-body {
+  fill: var(--animation-fill-color);
+  transition-delay: 0.05s;
+}
+
+/* click */
+
+.like-icon.is-liked .core,
+.like-icon.is-liked .main-body,
+.like-icon.is-liked .contour {
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s;
+}
+
+.like-icon.is-liked .main-body {
+  transition-delay: 0.03s;
+}
+
+.like-icon.is-liked .contour {
+  transition-delay: 0.06s;
+}
+
+/* keyframes */
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.25);
+  }
+}
+
+.like-icon {
+  overflow: visible;
+}
+
+.like-icon.is-liked .heart {
+  animation: pulse 0.3s 0.1s 1 ease-in;
+  transform-origin: center;
+}
+
+.like-icon .contour {
+  animation-duration: 0.1s;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+}
+
+@keyframes firework {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.like-icon.is-liked .sparks {
+  animation: firework 0.3s 0.3s 1 ease-in;
+}
