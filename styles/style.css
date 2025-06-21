@@ -108,12 +108,8 @@ main {
   filter: invert(0.95);
 }
 
-.filter-contrast {
-  filter: contrast(500%);
-}
-
-.filter-brightness {
-  filter: brightness(200%);
+.filter-contrast-brightness {
+  filter: contrast(500%) brightness(200%);
 }
 
 /* сомнительная штука, для лучшей видимости */
@@ -126,8 +122,8 @@ main {
   filter: saturate(0);
 }
 
-.filter-invert {
-  filter: invert(0.09);
+.filter-contrast {
+  filter: contrast(1.5);
 }
 
 .filter-huerotate {
