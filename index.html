@@ -29,24 +29,24 @@
 
   <body class="page">
     <header class="header content-width">
-      <article class="header__logo">
+      <div class="header__logo">
         <h1 class="header__logo_title">&lt;/HTML&gt;</h1>
         <h2 class="header__logo_desc">закрывающий тег</h2>
-      </article>
+      </div>
     </header>
     <main>
-      <section class="card card_1 content-width">
-        <h3 class="card__title">
+      <article class="card content-width">
+        <h2 class="card__title">
           Фритрек и нулевой спринт: Подготовка к работе
-        </h3>
-        <div class="card__image">
-          <img
+        </h2>
+        <figure class="card__image">
+          <img class="filter-grayscale"
             src="/images/card__images/card_1_image.jpg"
             alt="маленький мальчик, стоящий перед большой лестницей и готовящийся сделать свой первый шаг по ней"
           />
           <span class="card__image-label">&lt;/HTML&gt;</span>
-        </div>
-        <article class="card__text-block">
+        </figure>
+        <figcaption class="card__text-block">
           <p class="card__text">
             Это было самое начало пути. На этом этапе важно было проникнуться
             основами и настроиться на учёбу. И, возможно, подумать, как новые
@@ -60,9 +60,9 @@
             сталкиваемся каждый день. Сталкиваемся,но не знаем, что же находится
             по "ту" сторону экрана. Почему бы и не разобраться?
           </p>
-        </article>
+        </figcaption>
         <div class="card__buttons">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
               class="like-icon is-liked"
               width="39"
@@ -70,6 +70,7 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -97,21 +98,21 @@
               />
             </svg>
           </button>
-          <button class="card__like-button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
-      <section class="card card_2 content-width">
-        <h3 class="card__title">1 спринт: Я — чистый лист</h3>
-        <div class="card__image">
-          <img
+      </article>
+      <article class="card content-width">
+        <h2 class="card__title">1 спринт: Я — чистый лист</h2>
+        <figure class="card__image">
+          <img class="filter-blur"
             src="/images/card__images/card_2_image.jpg"
             alt="фото интернет-героя Камы, известного своими мотивирующими фразами"
           />
           <span class="card__image-label">&lt;CSS&gt;</span>
-        </div>
-        <article class="card__text-block">
+        </figure>
+        <figcaption class="card__text-block">
           <p class="card__text">
             На первых этапах мы работали со страхами и сомнениями, которые часто
             испытывают новички. Один из них — страх перед чистым листом. Это,
@@ -125,9 +126,9 @@
             этом". Вооружившись этой мыслью как знаменем, мы полетели в бездну
             тегов, классов и адаптива.
           </p>
-        </article>
+        </figcaption>
         <div class="card__buttons">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
               class="like-icon is-liked"
               width="39"
@@ -135,6 +136,7 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -162,21 +164,21 @@
               />
             </svg>
           </button>
-          <button class="card__like-button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
-      <section class="card card_3 content-width">
-        <h3 class="card__title">1 спринт: А если не получится?</h3>
-        <div class="card__image">
-          <img
+      </article>
+      <article class="card content-width">
+        <h2 class="card__title">1 спринт: А если не получится?</h2>
+        <figure class="card__image">
+          <img class="filter-invert"
             src="/images/card__images/card_3_image.jpg"
             alt="плакат с жизнеутверждающей фразой easy peasy"
           />
           <span class="card__image-label">&lt;desigions&gt;</span>
-        </div>
-        <article class="card__text-block">
+        </figure>
+        <figcaption class="card__text-block">
           <p class="card__text">
             Первый проект — позади! Но это всё ещё самое начало пути. Радость
             могла быстро померкнуть и смениться ожиданием провала. Или вы,
@@ -188,9 +190,9 @@
             как окажется на самом деле, был намного больше, чем я себе
             представлял.
           </p>
-        </article>
+        </figcaption>
         <div class="card__buttons">
-          <button class="card__icon-button">
+          <button class="card__icon-button"  type="button">
             <svg
               class="like-icon is-liked"
               width="39"
@@ -198,6 +200,7 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -225,21 +228,21 @@
               />
             </svg>
           </button>
-          <button class="card__like-button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
-      <section class="card card_4 content-width">
-        <h3 class="card__title">2 спринт: Погоня за идеалом</h3>
-        <div class="card__image">
-          <img
+      </article>
+      <article class="card content-width">
+        <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
+        <figure class="card__image">
+          <img class="filter-contrast filter-brightness"
             src="/images/card__images/card_4_image.jpg"
             alt="кадр из советского мульфильма. Вовка в тридевятом царстве"
           />
           <span class="card__image-label">&lt;care&gt;</span>
-        </div>
-        <article class="card__text-block">
+        </figure>
+        <figcaption class="card__text-block">
           <p class="card__text">
             На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы
             понять, как много ещё впереди. Вы могли попытаться погнаться за
@@ -258,9 +261,9 @@
             несколько кружек кофе в ночи перед работой. Теперь, наверное, мы
             знаем, что это такое.
           </p>
-        </article>
+        </figcaption>
         <div class="card__buttons">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
               class="like-icon is-liked"
               width="39"
@@ -268,6 +271,7 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -295,21 +299,21 @@
               />
             </svg>
           </button>
-          <button class="card__like-button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
-      <section class="card card_5 content-width">
-        <h3 class="card__title">2 спринт: О тех, кто рядом</h3>
-        <div class="card__image">
-          <img
+      </article>
+      <article class="card content-width">
+        <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
+        <figure class="card__image">
+          <img class="filter-saturate"
             src="/images/card__images/card_5_image.jpg"
             alt="маленькая собака, стоящая четырьмя лапами на четырех банках с забавными подписями"
           />
           <span class="card__image-label">&lt;support&gt;</span>
-        </div>
-        <article class="card__text-block">
+        </figure>
+        <figcaption class="card__text-block">
           <p class="card__text">
             Всё это время вы были не одиноки (хотя, возможно, иногда и
             чувствовали, что одни против целого мира). Вас окружали
@@ -325,9 +329,9 @@
             >
             и добрые индусы с ютуба.
           </p>
-        </article>
+        </figcaption>
         <div class="card__buttons">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
               class="like-icon is-liked"
               width="39"
@@ -335,6 +339,7 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -362,21 +367,21 @@
               />
             </svg>
           </button>
-          <button class="card__like-button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
-      <section class="card card_6 content-width">
-        <h3 class="card__title">3 спринт: Обходные стратегии</h3>
-        <div class="card__image">
-          <img
+      </article>
+      <article class="card content-width">
+        <h2 class="card__title">3 спринт: Обходные стратегии</h2>
+        <figure class="card__image">
+          <img class="filter-invert"
             src="/images/card__images/card_6_image.jpg"
             alt="кадр из фильма, где зак галифианакис считает карты"
           />
           <span class="card__image-label">&lt;Lifes-style: none;&gt;</span>
-        </div>
-        <article class="card__text-block">
+        </figure>
+        <figcaption class="card__text-block">
           <p class="card__text">
             На этом курсе вы постоянно решали разные задачи. В какой-то момент
             вам могло показаться, что решения просто иссякли. Значит, пришло
@@ -387,9 +392,9 @@
             решали. Но если мы сейчас здесь, значит все нужные углы были
             изучены, решения найдены, удовольствия от решений получены.
           </p>
-        </article>
+        </figcaption>
         <div class="card__buttons">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
               class="like-icon is-liked"
               width="39"
@@ -397,6 +402,7 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -424,21 +430,21 @@
               />
             </svg>
           </button>
-          <button class="card__like-button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
-      <section class="card card_7 content-width">
-        <h3 class="card__title">3 спринт: Когда опускаются руки</h3>
-        <div class="card__image">
-          <img
+      </article>
+      <article class="card content-width">
+        <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
+        <figure class="card__image">
+          <img class="filter-huerotate"
             src="/images/card__images/card_7_image.jpg"
             alt="логотип проекта по страхованию жизни домашних животных"
           />
           <span class="card__image-label">&lt;/HTML&gt;</span>
-        </div>
-        <article class="card__text-block">
+        </figure>
+        <figcaption class="card__text-block">
           <p class="card__text">
             Во время учёбы часто возникает чувство, когда не знаешь, за что
             хвататься. Вроде и проектную пора сдавать, и задачи хочется
@@ -453,9 +459,9 @@
             получая удовольствие от маленьких шагов, я смог вернуть необходимый
             настрой для дальнейшей учебы.
           </p>
-        </article>
+        </figcaption>
         <div class="card__buttons">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
               class="like-icon is-liked"
               width="39"
@@ -463,6 +469,7 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -490,21 +497,21 @@
               />
             </svg>
           </button>
-          <button class="card__like-button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
-      <section class="card card_8 content-width">
-        <h3 class="card__title">«Сейчас я здесь»</h3>
-        <div class="card__image">
-          <img
+      </article>
+      <article class="card content-width">
+        <h2 class="card__title">«Сейчас я здесь»</h2>
+        <figure class="card__image">
+          <img class="filter-sepia"
             src="/images/card__images/card_8_image.jpg"
             alt="гомер симпсон с плакатом, предупреждающем о приближающемся конце"
           />
           <span class="card__image-label">&lt;experience&gt;</span>
-        </div>
-        <article class="card__text-block">
+        </figure>
+        <figcaption class="card__text-block">
           <p class="card__text">
             Сейчас вы уже очень много знаете о вёрстке. Но это только начало.
             Во-первых, впереди ещё много материала про «красотищу». Во-вторых, с
@@ -519,9 +526,9 @@
             можно будет пощупать JS. Заранее извиняюсь, за выбор картинок и
             текст под ними.
           </p>
-        </article>
+        </figcaption>
         <div class="card__buttons">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
               class="like-icon is-liked"
               width="39"
@@ -529,6 +536,7 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -556,13 +564,13 @@
               />
             </svg>
           </button>
-          <button class="card__like-button">
+          <button class="card__like-button button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
       <button
-        class="save-button"
+        class="save-button button"
         type="button"
         onclick="window['save-window'].showModal()"
       >
@@ -579,7 +587,7 @@
           <p class="button__text">Вставьте дискету, чтобы продолжить</p>
         </div>
         <button
-          class="button__text save-window-button"
+          class="button__text button save-window-button"
           type="button"
           onclick="window['save-window'].close()"
         >
