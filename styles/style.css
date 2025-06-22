@@ -85,6 +85,7 @@ main {
 
 .card__image {
   position: relative;
+  margin: 0;
 }
 
 .card__image img {
@@ -212,15 +213,16 @@ main {
 }
 
 .save-button {
+  gap: 8px;
   padding-inline: 18px;
   line-height: 14px;
   block-size: clamp(3.4375rem, 5.8882rem + -2.723vw, 5.25rem);
-  inline-size: clamp(19.125rem, 18.047rem + 4.601vw, 22.188rem);
+  inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
   margin-block-end: 103px;
 }
 
 .save-button svg {
-  inline-size: clamp(1.75rem, 1.904rem + -0.657vw, 1.313rem);
+  inline-size: clamp(1.3125rem, 1.904rem + -0.6573vw, 1.75rem);
   mix-blend-mode: difference;
 }
 
