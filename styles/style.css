@@ -86,15 +86,16 @@ main {
 .card__image {
   position: relative;
   margin: 0;
+  border: 2px solid var(--dark-color);
 }
 
 .card__image img {
+  display: block;
   width: calc(100% + 2px);
   margin-inline: -1px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center;
-  border: 2px solid var(--dark-color);
 }
 
 .filter-grayscale {
