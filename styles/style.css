@@ -185,7 +185,7 @@ main {
   background-color: transparent;
   border: 2px solid transparent;
   block-size: 38px;
-  transition: border  .3s ease;
+  transition: border .3s ease;
 }
 
 .button {
@@ -307,5 +307,3 @@ button span {
   border: 2px solid var(--dark-color);
   box-sizing: border-box;
 }
-
-
